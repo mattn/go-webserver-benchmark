@@ -23,17 +23,17 @@ Code:
 * apache
     run apache and do following.
 
-    C:\&gt;ab -n 100 -c 10 http://localhost/helloworld.txt
+    C:\>;ab -n 100 -c 10 http://localhost/helloworld.txt
 
 * python
     run python/server.bat and do following.
 
-    C:\&gt;ab -n 100 -c 10 http://localhost:8989/helloworld.txt
+    C:\>ab -n 100 -c 10 http://localhost:8989/helloworld.txt
 
 * golang
     compile and run golang/server.go and do following.
 
-    C:\&gt;ab -n 100 -c 10 http://localhost:8888/helloworld.txt
+    C:\>ab -n 100 -c 10 http://localhost:8888/helloworld.txt
 
 Result:
 -------
@@ -41,19 +41,19 @@ Result:
 
 ### Normal
 
-    | server  | Requests per second | log file    |
-    |---------|---------------------|-------------|
-    | apache  |      2138.76 [#/sec]|apache2-n.log|
-    | python  |        15.06 [#/sec]|python-n.log |
-    | golang1 |        18.39 [#/sec]|golang1-n.log|
-    | golang2 |        23.58 [#/sec]|golang2-n.log|
+| server  | Requests per second | log file    |
+|---------|---------------------|-------------|
+| apache  |      2138.76 [#/sec]|apache2-n.log|
+| python  |        15.06 [#/sec]|python-n.log |
+| golang1 |        18.39 [#/sec]|golang1-n.log|
+| golang2 |        23.58 [#/sec]|golang2-n.log|
 
 ### Keep Alive
 
-    | server  | Requests per second | log file    |
-    |---------|---------------------|-------------|
-    | apache  |      2138.81 [#/sec]|apache2-k.log|
-    | python  |        13.59 [#/sec]|python-k.log |
-    | golang  |       160.41 [#/sec]|golang1-k.log|
-    | golang2 |      2153.59 [#/sec]|golang2-k.log|
+| server  | Requests per second | log file    |
+|---------|---------------------|-------------|
+| apache  |      2138.81 [#/sec]|apache2-k.log|
+| python  |        13.59 [#/sec]|python-k.log |
+| golang  |       160.41 [#/sec]|golang1-k.log|
+| golang2 |      2153.59 [#/sec]|golang2-k.log|
 
