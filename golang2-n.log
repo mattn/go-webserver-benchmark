@@ -1,0 +1,43 @@
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient).....done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            8888
+
+Document Path:          /helloworld.txt
+Document Length:        15 bytes
+
+Concurrency Level:      10
+Time taken for tests:   4.241 seconds
+Complete requests:      100
+Failed requests:        0
+Write errors:           0
+Total transferred:      20000 bytes
+HTML transferred:       1500 bytes
+Requests per second:    23.58 [#/sec] (mean)
+Time per request:       424.103 [ms] (mean)
+Time per request:       42.410 [ms] (mean, across all concurrent requests)
+Transfer rate:          4.61 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   42 144.0      0     635
+Processing:     0  382 255.1    495    1176
+Waiting:        0  350 254.0    495     650
+Total:          0  424 287.8    511    1176
+
+Percentage of the requests served within a certain time (ms)
+  50%    511
+  66%    511
+  75%    542
+  80%    542
+  90%    650
+  95%   1006
+  98%   1176
+  99%   1176
+ 100%   1176 (longest request)

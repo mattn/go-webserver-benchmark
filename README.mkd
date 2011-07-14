@@ -1,0 +1,59 @@
+This is benchmark for webserver.
+
+Introduction:
+-------------
+
+This is a personal project to get benchmark result of webserver.
+Comparing webserver following.
+
+* apache 2.2
+* python 2.7
+* golang fa6814569009+ tip
+
+Condition:
+----------
+
+WindowsXP SP3, Intel(R) Core(TM)2 Duo, 2.66GHz, 1.96GB RAM.
+Get benchmark with following command.
+
+
+Code:
+-----
+
+* apache
+    run apache and do following.
+
+    C:\&gt;ab -n 100 -c 10 http://localhost/helloworld.txt
+
+* python
+    run python/server.bat and do following.
+
+    C:\&gt;ab -n 100 -c 10 http://localhost:8989/helloworld.txt
+
+* golang
+    compile and run golang/server.go and do following.
+
+    C:\&gt;ab -n 100 -c 10 http://localhost:8888/helloworld.txt
+
+Result:
+-------
+    see *.log file.
+
+### Normal
+
+    | server  | Requests per second | log file    |
+    |---------|---------------------|-------------|
+    | apache  |      2138.76 [#/sec]|apache2-n.log|
+    | python  |        15.06 [#/sec]|python-n.log |
+    | golang1 |        18.39 [#/sec]|golang1-n.log|
+    | golang2 |        23.58 [#/sec]|golang2-n.log|
+
+### Keep Alive
+
+    | server  | Requests per second | log file    |
+    |---------|---------------------|-------------|
+    | apache  |      2138.81 [#/sec]|apache2-k.log|
+    | python  |        13.59 [#/sec]|python-k.log |
+    | golang  |       160.41 [#/sec]|golang1-k.log|
+    | golang2 |      2153.59 [#/sec]|golang2-k.log|
+
