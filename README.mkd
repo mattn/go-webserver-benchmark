@@ -14,35 +14,31 @@ Comparing webserver following.
 Condition:
 ----------
 
-WindowsXP SP3, Intel(R) Core(TM)2 Duo, 2.66GHz, 1.96GB RAM.
+On WindowsXP SP3, Intel(R) Core(TM)2 Duo, 2.66GHz, 1.96GB RAM,
 Get benchmark with following command.
 
-
-Code:
------
-
-* apache
+### apache
 
 run apache and do following:
 
 	C:\>ab -n 100 -c 10 http://localhost/helloworld.txt    > apache2-n.log
 	C:\>ab -n 100 -c 10 -k http://localhost/helloworld.txt > apache2-k.log
 
-* python
+### python
 
 run python/server.bat and do following:
 
 	C:\>ab -n 100 -c 10 http://localhost:8989/helloworld.txt    > python-n.log
 	C:\>ab -n 100 -c 10 -k http://localhost:8989/helloworld.txt > python-k.log
 
-* golang1
+### golang1
 
 compile and run golang/server.go and do following:
 
 	C:\>ab -n 100 -c 10 http://localhost:8888/helloworld.txt    > golang1-n.log
 	C:\>ab -n 100 -c 10 -k http://localhost:8888/helloworld.txt > golang1-k.log
 
-* golang2
+### golang2
 
 compile and run golang/server.go and do following:
 
