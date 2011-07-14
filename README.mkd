@@ -58,7 +58,7 @@ see .log file.
 ### Normal
 
 | Server  | Requests per second [#/sec] | Log File    |
-|---------|-----------------------------|-------------|
+|---------|----------------------------:|-------------|
 | apache  |                      2138.76|apache2-n.log|
 | python  |                        15.06|python-n.log |
 | golang1 |                        18.39|golang1-n.log|
@@ -67,7 +67,7 @@ see .log file.
 ### Keep Alive
 
 | Server  | Requests per second [#/sec] | Log File    |
-|---------|-----------------------------|-------------|
+|---------|----------------------------:|-------------|
 | apache  |                      2138.81|apache2-k.log|
 | python  |                        13.59|python-k.log |
 | golang  |                       160.41|golang1-k.log|
